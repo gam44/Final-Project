@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play for Equal Pay</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"></script>
+    <style>
+    body{
+        background-color: black;
+    }
+    #chart{
+        position: absolute;
+        top: 50%;
+        left: 41%;
+        transform: translate(-40%, -445%);
+        }
+    #chart2{
+        position: absolute;
+        top: 50%;
+        left: 41%;
+        transform: translate(-40%, -425%);
+    }
+    #chart3{
+        position: absolute;
+        top: 50%;
+        left: 41%;
+        transform: translate(-40%, -340%);
+    }
+    .jumbotron{
+        background-color:#33507a
+    }
+    .jumbotron h1{
+    color: #fff;
+    }
+    .jumbotron p{
+    color: #fff;
+    }
+    .chart{
+        width: 80%;
+        height: 70%;
+    }
+    .chart2{
+        width: 80%;
+        height: 65%;
+    }
+    .chart3{
+        width: 80%;
+        height: 65%;
+    }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Play for Equal Pay</h1>
+        <p class="lead">Female athletes push their bodies to achieve incredible athletic feats. Yet, they often are not monetarily compensated to the same extent that their male counterparts are.</p>
+        <hr class="my-4">
+        <p>You can scroll or use the buttons below to navigate to three graphs that show the extent of gender pay disparities in three professional sports.</p>
+        <a class="btn btn-secondary btn-md" href="#chart" role="button">Tennis</a>
+        <a class="btn btn-secondary btn-md" href="#chart2" role="button">Soccer</a>
+        <a class="btn btn-secondary btn-md" href="#chart3" role="button">Basketball</a>
+    <div>
+
+    <img src="BillieJeanR.png" alt="Snow" style="width:100%;">
+    <img src="soccerscreen.png" alt="Snow" style="width:100%;">
+    <img src="basketballscreen.png" alt="Snow" style="width:100%;">
+    <div class="chart" id="chart"></div>
+    <div class="chart2" id="chart2"></div>
+    <div class="chart3" id="chart3"></div>
+
+</body>
+    <script src="./libraries/d3.js"></script>
+	<script src="./libraries/c3.js"></script>
+	<link href="./libraries/c3.css" rel="stylesheet">
+    <script src="sketch.js"></script>
+</html>
